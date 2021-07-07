@@ -10,10 +10,10 @@ class QuadraticEqTest {
     void quadraticEqPos() {
         QuadraticEq Quad = new QuadraticEq();
 
+        double[] testArray = {1,-4};
         double[] array = Quad.quadraticEq(1,3,-4);
 
-        assertEquals(array[0], 1);
-        assertEquals(array[1], -4);
+        assertArrayEquals(array,testArray);
 
 
 
